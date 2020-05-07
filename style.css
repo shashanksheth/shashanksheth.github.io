@@ -1,0 +1,127 @@
+body {
+    background-color: rgba(211, 211, 211, 0.459);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+.navbar.navbar-expand-lg.navbar-light.bg-light {
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+.navbar-brand {
+    margin-left: 5%;
+    font-size: larger;
+    padding: 12px;
+    background-color: lightseagreen;
+    color: white !important;
+}
+
+.navbar-nav.ml-auto > li:hover {
+    background-color: rgba(211, 211, 211, 0.459)
+}
+
+.container-xl {
+    margin: 5%;
+    width: 90%;
+}
+
+.col-lg, .col-lg-4 {
+    margin:14px;
+    background-color: white;
+    padding: 30px;
+}
+
+.col-lg-4 {
+    float: none !important; 
+}
+
+#pagetitle {
+    font-size: 30px;
+    color: lightseagreen;
+}
+
+#landingfig {
+    float:left;
+    height:165px;
+    width:210px;
+}
+
+#analysisfig {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    height:550px;
+    width:700px;
+}
+
+#comparisontitle {
+    text-decoration: none;
+    font-size: 25px;
+    color: lightseagreen;
+    text-align: center;  
+}
+
+#comparisonfig {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    max-height:100%;
+    width:100%;
+}
+
+#viztitle {
+    font-size: large;
+    color: lightseagreen;
+}
+
+#vizfig {
+    height:calc(0.9*165px);
+    width:calc(0.9*210px);
+}
+
+#selectedviz {
+    border-color: lightseagreen;
+    border-style: solid;
+    border-width: 3px;
+}
+
+hr.grey {
+    border: 0;
+    clear:both;
+    display:block;
+    width: 96%;               
+    background-color: rgba(211, 211, 211, 0.459);
+    height: 1px;
+}
+
+@media (max-width: 991px) {
+    .navbar.navbar-expand-lg.navbar-light.bg-light {
+      background-color: lightseagreen !important;
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+    .collapse.navbar-collapse {
+        background-color: white;
+    }
+    .navbar-nav.ml-auto.li {
+        margin-left: 5%;
+    }
+}
+
+.footer {
+    bottom: 0px;
+    height:60px;
+    width:100%;
+    background-color: rgb(78, 78, 78);
+    color:white;
+    text-align: center;
+    border-top-width: 5px;
+    border-top-style: solid;
+    border-top-color: lightseagreen;
+}
+
+.foot {
+    display:block;
+    content:"";
+    margin-top: 14px;
+}
