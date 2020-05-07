@@ -32,7 +32,7 @@ body {
 }
 
 .col-lg-4 {
-    float: none !important; 
+    height:420px;
 }
 
 #pagetitle {
