@@ -10,7 +10,7 @@
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#"><b>Lattitude</b></a>
+        <a class="navbar-brand" href="./index.html"><b>Lattitude</b></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -28,7 +28,7 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./comparison.html">Comparison</a>
+                    <a class="nav-link" href="#">Comparison</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="./data.html">Data</a>
@@ -37,47 +37,39 @@
         </div>
     </nav>
     <div class="container-xl">
-        <div class="row">
-            <div class="col-lg">
-                <p id="pagetitle"><b>Summary: Latitude vs. X</b></p>
-                <hr class="grey">
-                <br> 
-                <p>
-                    <img src="./Resources/assets/images/Fig1.png" id="landingfig"/>
-                    The purpose of this project was to analyze how weather changes as you get closer to the equator. 
-                    To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a 
-                    dataset on over 500 cities.
-                </p>
-                <br>
-                <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. 
-                    latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This
-                    site provides the source data and visualizations created as part of the analysis, as well as
-                    the explanations and descriptions of any trends and correlations witnessed.</p>
+        <div class="col-lg">
+            <p id="pagetitle"><b>Comparison: Latitude vs. X</b></p>
+            <hr class="grey">
+            <br> 
+            <p>
+                Click any plot to get an in-depth analysis.
+            </p>
+            <div class="row justify-content-center">
+                <div class="col-lg">
+                    <a href="./Visualizations/temp.html">
+                        <p id="comparisontitle"><b>vs. Max Temperature</b></p>
+                        <img src="./Resources/assets/images/Fig1.png" id="comparisonfig"/>
+                    </a>
+                </div>
+                <div class="col-lg">
+                    <a href="./Visualizations/humidity.html">
+                        <p id="comparisontitle"><b>vs. Humidity</b></p>
+                        <img src="./Resources/assets/images/Fig2.png" id="comparisonfig"/>
+                    </a>
+                </div>
             </div>
-            <div class="col-lg-4">
-                <p id="viztitle"><b>Visualizations</b></p>
-                <hr class="grey">
-                <div class="row justify-content-center">
-                    <!-- <div class="col-xs"> -->
-                        <a href="./Visualizations/temp.html">
-                            <img src="./Resources/assets/images/Fig1.png" id="vizfig"/>
-                        </a>
-                    <!-- </div> -->
-                    <!-- <div class="col-xs"> -->
-                        <a href="./Visualizations/humidity.html">
-                            <img src="./Resources/assets/images/Fig2.png" id="vizfig"/>
-                        </a>
-                    <!-- </div> -->
-                    <!-- <div class="col-xs"> -->
-                        <a href="./Visualizations/cloudiness.html">
-                            <img src="./Resources/assets/images/Fig3.png" id="vizfig"/>
-                        </a>
-                    <!-- </div> -->
-                    <!-- <div class="col-xs"> -->
-                        <a href="./Visualizations/windspeed.html">
-                            <img src="./Resources/assets/images/Fig4.png" id="vizfig"/>
-                        </a>
-                    <!-- </div> -->
+            <div class="row justify-content-center">
+                <div class="col-lg">
+                    <a href="./Visualizations/cloudiness.html">
+                        <p id="comparisontitle"><b>vs. Cloudiness</b></p>
+                        <img src="./Resources/assets/images/Fig3.png" id="comparisonfig"/>
+                    </a>
+                </div>
+                <div class="col-lg">
+                    <a href="./Visualizations/windspeed.html">
+                        <p id="comparisontitle"><b>vs. Wind Speed</b></p>
+                        <img src="./Resources/assets/images/Fig4.png" id="comparisonfig"/>
+                    </a>
                 </div>
             </div>
         </div>
